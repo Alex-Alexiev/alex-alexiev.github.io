@@ -1,0 +1,36 @@
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  color: #666666;
+  padding: 0;
+}
+
+.img-circle {
+  width: 7rem;
+  vertical-align: middle;
+}
+
+#head {
+  text-align: center;
+}
+
+#title {
+  font-size: 200%;
+  font-weight: 600;
+  margin: 1rem;
+  vertical-align: middle;
+}
+
+#main {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#intro {
+  text-align: left;
+}
