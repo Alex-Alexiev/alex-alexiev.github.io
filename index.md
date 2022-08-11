@@ -1,4 +1,9 @@
-## Alexander Alexiev
+<h1 align="center"> Alexander Alexiev </h1>
+
+
+<p align="center">
+  <img width="300" src="https://github.com/Alex-Alexiev/alex-alexiev.github.io/blob/main/assets/images/alex_alexiev_1.png?raw=true">
+</p>
 
 You can use the [editor on GitHub](https://github.com/Alex-Alexiev/alex-alexiev.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -11,7 +16,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 2
+# Header 1
 ## Header 2
 ### Header 3
 
@@ -26,7 +31,6 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-![image](https://github.com/Alex-Alexiev/alex-alexiev.github.io/assets/images/alex_alexiev_1.png)
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
