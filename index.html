@@ -1,40 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    // var e = document.getElementById(id);
+	    var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
+
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+	<!-- Custom styles for this template -->
+	<link href="files/jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="files/js/scroll.js"></script>
 </head>
-<body class="home">
+
+<title>Alexander Alexiev</title>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #184c71;" id="Home">
+	    <div class="container">
+		<a class="navbar-brand">Alexander Alexiev</a>
+
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Experience">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Publications">Publications</a>
+				</li>
+			</ul>
+		</div>
+	    </div>
+	</nav>
+
+	<div id="Home" class="container" style="padding-top: 20px; font-size: 17px">
+		<div class="row">
+			<div class="col-md-3", style="padding-right: 40px">
+				<br>
+				<img class="img-responsive img-rounded" src="files/profile.jpg" alt="Photo" style="max-width: 100%;"><br>
+			</div>
+
+			<div class="col-md-9">
+			<br>
+			<p><font style="font-size: 20px"><b>Alexander Alexiev</b></font></p>
+
+			<p>I am an undegraduate student studying <a href="https://engsci.utoronto.ca/" target="_blank">Engineering Science</a> at the <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>. I am pursuing a Major in Robotics with a Minor in Machine Intelligence. Throughout my degree, I've worked at Electronic Arts as a Machine Learning Intern, I worked at MIT and Brigham and Women's Hostpial as a Biomedical Robotics Researcher, and I am a part of the Robot Vision and Learning group at the University of Toronto supervised by prof. Florian Shkurti. 
+			</p>
+
+			<p>
+			<a target="_blank" href="https://github.com/alex-alexiev"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			
+			alex.alexiev [at] mail (dot) utoronto (dot) ca 
+			</p>
+
+			</div>
+		</div>
+	</div><br><br>
 
 
-<main id="main">
-	<div id="head">
-		<img class="img-circle" src="assets/images/alex_alexiev_1.png">
-		<span id="title">
-			Alexander Alexiev
-		</span>
+	<!-- Experience -->
+	<div class="container">
+		<h3 id="Experience" style="padding-top: 80px; margin-top: -80px;">
+			Experience
+		</h3>
+
+		<div id="exp"></div>
+			<hr>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-12">
+							<h4><font color="black">Robot Vision and Learning Lab @ University of Toronto</font></h4><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10">
+							<ul>
+								<li>
+									Currently developing a novel technique to convert a monocular video into a dynamic 3D gaussian splatting representation to use for large scale imitation learning.
+								</li>
+								<li>
+									Created a computer vision pipeline to incorporate learning into task and motion planning (TAMP) problems by learning representations for 3D scenes with a series of CNNs and GNNs using perception data and automatically generated scene graphs from object poses.
+								</li>
+								<li>
+									Used Slurm and Docker to parallelize multiple data collection instances from a DRAKE simulation of a Franka Panda environment and multiple model training sessions in Tensorflow to gather training statistics and compare different models efficiently.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+						<img class="img-fluid img-rounded" src="files/images/rbl-logo.png">
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-12">
+							<h4><font color="black">Lab for Translational Engineering @ Massachusetts Institute of Technology and BWH</font></h4><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10">
+							<ul>
+								<li>
+									Led the development of a pill sized ingestible robot to autonomously deliver mRNA vaccines inside the stomach through a non-invasive manner. (Manuscript under preperation) 
+								</li>
+								<li>
+									Created an ingestible robot to create a map of the small intestine in 10 wavelengths to non-invasively and autonomously detect internal bleeding and bruising. (Manuscript under preparation) 
+								</li>
+								<li>
+									Developed a low power algorithm in C++ to fuse sensor data on an implant and detect opioid overdoses. 
+									An Implantable System for Opioid Safety, Device 100517
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+						<img class="img-fluid img-rounded" src="files/images/l4te-logo-teal-large.webp">
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-12">
+							<h4><font color="black">Machine Learning Group @ Electronic Arts</font></h4><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10">
+							<ul>
+								<li>
+									Created a tool for the Frostbite game engine in C++ to gather 3D bounding boxes for key animation objects and stream the data to a remote server for machine learning models.
+								</li>
+								<li>
+									Optimized the FIFA game testing process by designing an Autoencoder CNN with Tensorflow to detect visual animation glitches and therefore allowing human game testers to focus on more complex feedback.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+						<img class="img-fluid img-rounded" src="files/images/ea-logo.png">
+				</div>
+			</div>
+			<hr>
+		</div>
 	</div>
 
-	<div id="intro">
-		<p>
-			I am studying Robotics in the Engineering Science program at the University of Toronto. I'm passionate about computer vision and planning and control for robotics, but i'm love to spent time exploring different topics like reinforcement learning.
-		</p>
-		<p>
-			I spent a summer working at Electronic Arts developing computer vision models to detect animation glitches in the FIFA game series to reduce the load on human game testers. Now I'm applying some of the computer vision skills I learned to task and motion planning algorithms for robotics research at the RVL lab. 
-		</p>
-		<p>
-			This website showcases some of my projects.
-		</p>
+
+
+	<!-- Publications -->
+	<div class="container">
+		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
+			Publications
+			
+		</h3>
+
+		<div id="pubs"></div>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/isos.jpeg" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				Hen-Wei Huang, Peter R. Chai, ..., 
+				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, and
+				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
+				<br>
+				<b><font color="black">An Implantable System for Opiod Safety</font></b><br>
+				<b><a href="https://www.cell.com/device/home" target="_blank">Device</a></b> 100517
+				<a href="https://www.cell.com/action/showPdf?pii=S2666-9986%2824%2900417-4"> <small>[Paper]</small></a>
+				<a href="https://news.mit.edu/2024/implantable-sensor-could-reverse-opioid-overdoses-0814" target="_blank"> <small>[Press]</small></a>
+				</div>
+			</div><hr>
+
 	</div>
+	
+	
+	<br><br>
 
-</main>
 
+	
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
+
 </html>
