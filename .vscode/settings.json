@@ -1,0 +1,22 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.outDir": "%DIR%/../output/pdf",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "build-cv",
+      "command": "bash",
+      "args": [
+        "%WORKSPACE_FOLDER%/scripts/build-cv.sh"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Build CV with Tectonic",
+      "tools": [
+        "build-cv"
+      ]
+    }
+  ]
+}

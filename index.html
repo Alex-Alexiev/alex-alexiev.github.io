@@ -1,434 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-	<!-- Show more content -->
-	<script type="text/javascript">
-		function toggle_vis(id) {
-	    // var e = document.getElementById(id);
-	    var e = document.getElementsByClassName(id);
-			var showText = document.getElementById("showText");
-			for (var i = 0; i < e.length; i++) {
-		    	if (e[i].style.display == "none") {
-		        	e[i].style.display = "inline";
-	    			showText.innerHTML = "[Show less]";
-		    	} else {
-		    		e[i].style.display = "none";
-		    		showText.innerHTML = "[Show more]";
-		    	}
-		    }
-	    }
-	</script>
-
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<!-- https://fontawesome.com/cheatsheet -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-  <link rel="stylesheet" href="static/styles.css">
-	<!-- Custom styles for this template -->
-	<link href="files/jumbotron.css" rel="stylesheet">
-	<script src="js/main.js"></script>
-  <script src="files/js/scroll.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alexander Alexiev is a robotics researcher and Master of Science student at MIT.">
+  <title>Alexander Alexiev</title>
+  <link rel="stylesheet" href="files/css/site.css">
 </head>
-
-<title>Alexander Alexiev</title>
-
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #005089;">
-	    <div class="container">
-		<a class="navbar-brand" style="color:#f3f3f3">Alexander Alexiev</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="#about">Alexander Alexiev</a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="output/pdf/Alexander_Alexiev_CV.pdf">CV</a>
+    </nav>
+  </header>
 
-		<div class="collapse navbar-collapse" id="navbarToggle">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#Home">Home</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Publications">Publications</a>
-				</li>
+  <main id="main">
+    <section class="intro" id="about">
+      <img class="portrait" src="files/profile.jpg" alt="Portrait of Alexander Alexiev" width="240" height="240">
+      <div>
+        <p class="eyebrow">Robotics researcher</p>
+        <h1>Alexander Alexiev</h1>
+        <p class="lead">
+          I am a Master of Science student in Mechanical Engineering at MIT, advised by
+          <a href="https://biomimetics.mit.edu/" target="_blank" rel="noreferrer">Prof. Sangbae Kim</a>.
+          My research focuses on proprioceptive control for dexterous manipulation, combining
+          reinforcement learning, optimal control, tactile sensing, and custom robotic hardware.
+        </p>
+        <p>
+          Previously, I studied Engineering Science at the University of Toronto and worked on
+          robot learning, medical robotics, and embedded systems.
+        </p>
+        <div class="links" aria-label="Contact links">
+          <a href="mailto:aalexiev@mit.edu">aalexiev@mit.edu</a>
+          <a href="output/pdf/Alexander_Alexiev_CV.pdf">CV</a>
+        </div>
+      </div>
+    </section>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#Projects">Projects</a>
-				</li>
+    <section id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <h2 id="publications-title">Publications</h2>
+        <p>Selected research in robotics, sensing, and medical devices.</p>
+      </div>
+      <ol class="publication-list">
+        <li><article class="publication">
+          <div class="publication-media video-preview">
+            <video autoplay muted loop playsinline controls preload="auto" controlslist="nodownload noremoteplayback" aria-label="Preview of a blind grasp reflex for an anthropomorphic robotic hand">
+              <source src="files/publications/blind-grasp-preview.mp4" type="video/mp4">
+            </video>
+            <span aria-hidden="true">Video preview</span>
+          </div>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>ICRA · Under review</span><time datetime="2026-09">2026</time></div>
+            <h3><a href="https://doi.org/10.48550/arXiv.2609.31323" target="_blank" rel="noreferrer">See to Reach, Feel to Grasp: Learning A Blind Grasp Reflex for Anthropomorphic Robotic Hands</a></h3>
+            <p><strong>Alexander Alexiev</strong>, Tzu-Yuan Lin, Sang Min Kim, Ho Jae Lee, Yonghyeon Lee, Sangbae Kim</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <div class="publication-media video-preview">
+            <video autoplay muted loop playsinline controls preload="auto" controlslist="nodownload noremoteplayback" aria-label="Preview of whole-hand force regulation for dexterous grasping">
+              <source src="files/publications/whole-hand-force-preview.mp4" type="video/mp4">
+            </video>
+            <span aria-hidden="true">Video preview</span>
+          </div>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>ICRA · Under review</span><time datetime="2026-09">2026</time></div>
+            <h3><a href="https://doi.org/10.48550/arXiv.2609.30082" target="_blank" rel="noreferrer">Real-Time Force Regulation for Whole-Hand Dexterous Grasping</a></h3>
+            <p>Sang Min Kim, <strong>Alexander Alexiev</strong>, Tzu-Yuan Lin, Sangbae Kim, Young Min Kim, Yonghyeon Lee</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <div class="publication-media">
+            <img src="files/projects/splash.png" alt="Rendering of the ingestible biologics delivery robot" loading="lazy">
+          </div>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>Nature Mechanical Engineering · Under review</span><time datetime="2026-06">2026</time></div>
+            <h3>An ingestible robot for autonomously controlled oral delivery of biologics</h3>
+            <p><strong>Alexander Alexiev*</strong>, Jack Chen*, Karl Werner*, Giovanni Traverso</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <div class="publication-media video-preview">
+            <video autoplay muted loop playsinline controls preload="auto" controlslist="nodownload noremoteplayback" poster="files/publications/reactive-grasping-main.webp" aria-label="Preview of reactive dexterous grasping">
+              <source src="files/publications/reactive-dexterous-preview.mp4" type="video/mp4">
+            </video>
+            <span aria-hidden="true">Video preview</span>
+          </div>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>IEEE Transactions on Robotics · Under review</span><time datetime="2026-05">2026</time></div>
+            <h3><a href="https://doi.org/10.48550/arXiv.2605.03363" target="_blank" rel="noreferrer">Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control</a></h3>
+            <p>Ho Jae Lee, Yonghyeon Lee, <strong>Alexander Alexiev</strong>, Tzu-Yuan Lin, Se Hwan Jeon, Sangbae Kim</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <div class="publication-media video-preview">
+            <video autoplay muted loop playsinline controls preload="auto" controlslist="nodownload noremoteplayback" poster="files/publications/reactive-grasping-overview.webp" aria-label="Preview of hierarchical reactive grasping">
+              <source src="files/publications/reactive-grasp-preview.mp4" type="video/mp4">
+            </video>
+            <span aria-hidden="true">Video preview</span>
+          </div>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>ICRA</span><time datetime="2026">2026</time></div>
+            <h3><a href="https://doi.org/10.48550/arXiv.2509.01044" target="_blank" rel="noreferrer">Hierarchical Reactive Grasping via Task-Space Velocity Fields and Joint-Space Quadratic Programming</a></h3>
+            <p>Yonghyeon Lee, Tzu-Yuan Lin, <strong>Alexander Alexiev</strong>, Sangbae Kim</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <div class="publication-media video-preview">
+            <video autoplay muted loop playsinline controls preload="auto" controlslist="nodownload noremoteplayback" poster="files/publications/tactile-grasp-adjustment.webp" aria-label="Preview of tactile-reactive grasp adjustment">
+              <source src="files/publications/reflexive-grasp-preview.mp4" type="video/mp4">
+            </video>
+            <span aria-hidden="true">Video preview</span>
+          </div>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>ICRA</span><time datetime="2026">2026</time></div>
+            <h3><a href="https://doi.org/10.48550/arXiv.2509.15876" target="_blank" rel="noreferrer">High-Bandwidth Tactile-Reactive Control for Grasp Adjustment</a></h3>
+            <p>Yonghyeon Lee, Tzu-Yuan Lin, <strong>Alexander Alexiev</strong>, Sangbae Kim</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <a class="publication-media" href="https://doi.org/10.1126/scirobotics.adx1367" target="_blank" rel="noreferrer" aria-label="Open the mesenteric ischemia capsule paper">
+            <img src="files/projects/firefly.png" alt="FIREFLI ingestible sensing capsule" loading="lazy">
+          </a>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>Science Robotics</span><time datetime="2025-10">2025</time></div>
+            <h3><a href="https://doi.org/10.1126/scirobotics.adx1367" target="_blank" rel="noreferrer">An Ingestible Capsule for Luminance-Based Diagnosis of Mesenteric Ischemia</a></h3>
+            <p><strong>Alexander Alexiev*</strong>, Jack Chen*, Giovanni Traverso</p>
+          </div>
+        </article></li>
+        <li><article class="publication">
+          <a class="publication-media video-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11735030/#SD2" target="_blank" rel="noreferrer" aria-label="Watch the supplementary video for the implantable opioid safety system">
+            <img src="files/projects/isos.jpeg" alt="Rendering of the implantable opioid safety system" loading="lazy">
+            <span aria-hidden="true">▶ Video</span>
+          </a>
+          <div class="publication-copy">
+            <div class="publication-meta"><span>Device</span><time datetime="2024-08">2024</time></div>
+            <h3><a href="https://doi.org/10.1016/j.device.2024.100517" target="_blank" rel="noreferrer">An Implantable System for Opioid Safety</a></h3>
+            <p>Hen-Wei Huang, Peter R. Chai, et al., <strong>Alexander Alexiev</strong>, et al., Giovanni Traverso</p>
+          </div>
+        </article></li>
+      </ol>
+    </section>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#Experience">Experience</a>
-				</li>
+    <section id="patents" aria-labelledby="patents-title">
+      <div class="section-heading"><h2 id="patents-title">Patent</h2></div>
+      <article class="patent">
+        <div class="publication-meta"><span>Patent · WO 2026/076319</span><time datetime="2026-04">2026</time></div>
+        <h3><a href="https://patentscope.wipo.int/search/en/WO2026076319" target="_blank" rel="noreferrer">Electrically-Triggered Microactuator Powered by Aluminum-Nickel Nanofilm</a></h3>
+      </article>
+    </section>
+  </main>
 
-				
-			</ul>
-		</div>
-	    </div>
-	</nav>
+  <footer>
+    <p>© 2026 Alexander Alexiev</p>
+    <a href="#about">Back to top ↑</a>
+  </footer>
+  <script>
+    const previewVideos = document.querySelectorAll(".video-preview video");
+    const previewObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.play().catch(() => {});
+        } else {
+          entry.target.pause();
+        }
+      }
+    }, { threshold: 0.25 });
 
-	<div id="Home" class="container" style="padding-top: 20px; font-size: 17px">
-		<div class="row">
-			<div class="col-md-3", style="padding-right: 40px">
-				<br>
-				<img class="img-responsive img-rounded" src="files/profile.jpg" alt="Photo" style="max-width: 100%;"><br>
-			</div>
-
-			<div class="col-md-9">
-			<br>
-			<p><font style="font-size: 20px"><b>Alexander Alexiev</b></font></p>
-
-			<p>I am an undegraduate student studying <a href="https://engsci.utoronto.ca/" target="_blank">Engineering Science</a> at the <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>. I am pursuing a Major in Robotics with a Minor in Artificial Intelligence. Throughout my degree, I worked at Electronic Arts as a Machine Learning Intern, I worked at MIT as a Biomedical Robotics Researcher, and I am currently an undergraduate researcher at the Robot Vision and Learning group at the University of Toronto, supervised by prof. Florian Shkurti. 
-			</p>
-
-			<p>
-				My goal is to create robots that interact with the world as effortlessly as humans do. I aim to achieve this by conducting research at the intersection of computer vision, mechanical design, electrical engineering, and artificial intelligence. 
-			</p>
-
-			<p>
-			<a target="_blank" href="https://github.com/alex-alexiev"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
-			
-			alex.alexiev [at] mail (dot) utoronto (dot) ca 
-			</p>
-
-			</div>
-		</div>
-	</div><br><br>
-
-
-
-	<!-- Publications -->
-	<div class="container">
-		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
-			Publications and Patents
-			
-		</h3>
-
-		<div id="pubs"></div>
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/isos.jpeg" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				Hen-Wei Huang, Peter R. Chai, ..., 
-				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, and
-				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
-				<br>
-				<b><font color="black">An Implantable System for Opiod Safety</font></b><br>
-				<b><a href="https://www.cell.com/device/home" target="_blank">Device</a></b> 100517
-				<a href="https://www.cell.com/action/showPdf?pii=S2666-9986%2824%2900417-4"> <small>[Paper]</small></a>
-				<a href="https://news.mit.edu/2024/implantable-sensor-could-reverse-opioid-overdoses-0814" target="_blank"> <small>[Press]</small></a>
-				</div>
-			</div>
-		<hr>
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/firefly.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, Jack Chen, 
-				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
-				<br>
-				<b><font color="black">Ingestible Light-Reflectance Sensing Capsule for Automated Ischemia Detection</font></b><br>
-				<i>Under Review at Science Robotics</i>
-				</div>
-			</div>
-		<hr>
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/splash.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, Jack Chen, 
-				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
-				<br>
-				<b><font color="black">Electrically-Triggered Microactuator Powered by Aluminum-Nickel Nanofilm</font></b><br>
-				<i>U.S. Provisional Patent</i>
-				</div>
-			</div>
-		<hr>
-		
-		
-
-	</div>
-
-	<br>
-	<br>
-	
-	<!-- Projects -->
-	<div class="container">
-		<h3 id="Projects" style="padding-top: 80px; margin-top: -80px;">
-			Projects
-			
-		</h3>
-
-		<div id="pubs"></div>
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/rope.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Real-time Non-Rigid Body Tracking and Manipulation</font></b><br>
-				A novel approach to tracking and manipulating deformable objects, like ropes. Rather than Gaussian splatting, a computationally expensive method, I use point clouds, which are extremely fast and enable real-time state estimation of non-rigid bodies. I apply the non-rigid point set registration technique to keep the object's points consistent across all frames. I successfully trained a graph neural network to model the rope’s dynamics. 
-				</div>
-			</div>
-		<hr>
-		
-		
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/tamp.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Task and Motion Planning with Object Relevance</font></b><br>
-				A novel machine learning architecture, encoding visual data with a convolutional neural network and scene graph information with a graph neural network. This system predicts object relevance scores to help direct the search process in task and motion planners (specifically a PDDLStream variant).
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/tft.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Enhancing Time Series Prediction Through Short-Term Covariate Forecasting</font></b><br>
-				A framework that is able to first forecast covariates into the near future and then use those predictions along with past known covariates to estimate the current target variable. 
-				</div>
-			</div>
-		<hr>
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/jet.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Electrically-Triggered Jetting of mRNA Vaccine Into Internal Tissue</font></b><br>
-			 Designed and created a novel ingestible robot capable of delivering mRNA vaccines directly into the stomach tissue, thus alleviating the need for an injection. 
-				</div>
-			</div>
-		<hr>
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/heater.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Ultra-Low Power Microheater</font></b><br>
-				Developed a novel ultra low power method to ignite a reactive metallic nanofilm on demand using a custom micro-heater array.
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/bistable.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Mesoscale Single-Cut Bistable Mechanism</font></b><br>
-				Created the first mesoscale (1-500 um) bistable mechanism that can be cut in a single laser cutting operation out of Nickle chromium alloy. Can be used in a variety of applications, such as drug delivery, micro-robotics, and MEMS.
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/robosoccer.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">RoboSoccer</font></b><br>
-				Designed a multi-agent control algorithm using decision trees for a team of 4 humanoid robots playing soccer for the RoboCup 2022 in Thailand.
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/utfr.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">University of Toronto Formula Racing Team</font></b><br>
-				Created the wiring harness for the car and designed a cell-level fusing system for a custom 600V Li-ion battery pack made with 18650 cells.
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/ball.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Ball Balancing Robot</font></b><br>
-				Created a robot that balances on a ball by using the digital signal processor on the IMU for fast closed loop control with a dynamics model and a custom stepper motor controll library.
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/yoda.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Actuating Plotter</font></b><br>
-				Built and programmed a plotter for under $15 capable of taking any PNG image and converting it to a series of line segments that can be drawn by two stepper motors.
-				</div>
-			</div>
-		<hr>
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/7558.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">FIRST Robotics Competition Mentor</font></b><br>
-				I started my high school's FRC team in grade 11. I've since continued as a mentor teaching modern robotics methods and tools to high school students for the FIRST Robotics Competition. Currently using Nvidia Isaac Sim with ROS2 to develop and test a highly optimized C++ library using multiple cameras and AprilTag targets for fast and precise localization with an extended kalman filter and factor graphs.
-				</div>
-			</div>
-		<hr>
-
-
-
-		<hr>
-			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-rounded" src="files/projects/drones.png" style="border:1px solid black" alt="">
-				</div>
-				<div class="col-md-9">
-				<b><font color="black">Drones</font></b><br>
-				In the 8th grade I designed, 3D printed, and programmed on an Arduino multiple drones with custom gimbals and GPS navigation. Fly FPV drones recreationally. 
-				</div>
-			</div>
-		<hr>
-
-		
-		
-	
-	</div>
-	
-	<br>
-	<br> 
-
-	<!-- Experience -->
-	<div class="container">
-		<h3 id="Experience" style="padding-top: 80px; margin-top: -80px;">
-			Experience
-		</h3>
-
-		<div id="exp"></div>
-			<hr>
-			<div class="row">
-				<div class="col-md-10">
-					<div class="row">
-						<div class="col-md-12">
-							<h4><font color="black">Robot Vision and Learning Lab @ University of Toronto</font></h4><br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-10">
-							<ul>
-								<li>
-									Currently working on novel methods for robots to manipulate ropes in 3D. 
-								</li>
-								<li>
-									Created a computer vision pipeline to incorporate learning into task and motion planning (TAMP) problems by learning representations for 3D scenes with a series of CNNs and GNNs using perception data and automatically generated scene graphs from object poses.
-								</li>
-								<li>
-									Used Slurm and Docker to parallelize multiple data collection instances from a DRAKE simulation of a Franka Panda environment and multiple model training sessions in Tensorflow to gather training statistics and compare different models efficiently.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-				<div class="col d-flex align-items-center justify-content-center">
-						<img class="img-fluid img-rounded" src="files/images/rbl-logo.png">
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-md-10">
-					<div class="row">
-						<div class="col-md-12">
-							<h4><font color="black">Lab for Translational Engineering @ Massachusetts Institute of Technology and BWH</font></h4><br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-10">
-							<ul>
-								<li>
-									Led the development of a pill sized ingestible robot to autonomously deliver mRNA vaccines inside the stomach through a non-invasive manner. (Manuscript under preperation) 
-								</li>
-								<li>
-									Created an ingestible robot to create a map of the small intestine in 10 wavelengths to non-invasively and autonomously detect internal bleeding and bruising. (Manuscript under preparation) 
-								</li>
-								<li>
-									Developed a low power algorithm in C++ to fuse sensor data on an implant and detect opioid overdoses. 
-									An Implantable System for Opioid Safety, Device 100517
-								</li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-				<div class="col d-flex align-items-center justify-content-center">
-						<img class="img-fluid img-rounded" src="files/images/l4te-logo-teal-large.webp">
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-md-10">
-					<div class="row">
-						<div class="col-md-12">
-							<h4><font color="black">Machine Learning Team @ Electronic Arts</font></h4><br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-10">
-							<ul>
-								<li>
-									Created a tool for the Frostbite game engine in C++ to gather 3D bounding boxes for key animation objects and stream the data to a remote server for machine learning models.
-								</li>
-								<li>
-									Optimized the FIFA game testing process by designing an Autoencoder CNN with Tensorflow to detect visual animation glitches and therefore allowing human game testers to focus on more complex feedback.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-				<div class="col d-flex align-items-center justify-content-center">
-						<img class="img-fluid img-rounded" src="files/images/ea-logo.png">
-				</div>
-			</div>
-			<hr>
-		</div>
-	</div>
-
-
-	<br><br>
-
-
-	
-	<!-- /container -->
-
-	<!-- Bootstrap core JavaScript -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    for (const video of previewVideos) {
+      video.muted = true;
+      previewObserver.observe(video);
+    }
+  </script>
 </body>
-
 </html>

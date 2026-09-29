@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!-- Archived pre-redesign page. The _archive directory is excluded from GitHub Pages builds. -->
+<html lang="en">
+
+<head>
+
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    // var e = document.getElementById(id);
+	    var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+	<!-- Custom styles for this template -->
+	<link href="files/jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="files/js/scroll.js"></script>
+</head>
+
+<title>Alexander Alexiev</title>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #005089;">
+	    <div class="container">
+		<a class="navbar-brand" style="color:#f3f3f3">Alexander Alexiev</a>
+
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#Publications">Publications</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#Projects">Projects</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#Experience">Experience</a>
+				</li>
+
+				
+			</ul>
+		</div>
+	    </div>
+	</nav>
+
+	<div id="Home" class="container" style="padding-top: 20px; font-size: 17px">
+		<div class="row">
+			<div class="col-md-3", style="padding-right: 40px">
+				<br>
+				<img class="img-responsive img-rounded" src="files/profile.jpg" alt="Photo" style="max-width: 100%;"><br>
+			</div>
+
+			<div class="col-md-9">
+			<br>
+			<p><font style="font-size: 20px"><b>Alexander Alexiev</b></font></p>
+
+			<p>I am an undegraduate student studying <a href="https://engsci.utoronto.ca/" target="_blank">Engineering Science</a> at the <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>. I am pursuing a Major in Robotics with a Minor in Artificial Intelligence. Throughout my degree, I worked at Electronic Arts as a Machine Learning Intern, I worked at MIT as a Biomedical Robotics Researcher, and I am currently an undergraduate researcher at the Robot Vision and Learning group at the University of Toronto, supervised by prof. Florian Shkurti. 
+			</p>
+
+			<p>
+				My goal is to create robots that interact with the world as effortlessly as humans do. I aim to achieve this by conducting research at the intersection of computer vision, mechanical design, electrical engineering, and artificial intelligence. 
+			</p>
+
+			<p>
+			<a target="_blank" href="https://github.com/alex-alexiev"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+			
+			alex.alexiev [at] mail (dot) utoronto (dot) ca 
+			</p>
+
+			</div>
+		</div>
+	</div><br><br>
+
+
+
+	<!-- Publications -->
+	<div class="container">
+		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
+			Publications and Patents
+			
+		</h3>
+
+		<div id="pubs"></div>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/isos.jpeg" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				Hen-Wei Huang, Peter R. Chai, ..., 
+				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, and
+				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
+				<br>
+				<b><font color="black">An Implantable System for Opiod Safety</font></b><br>
+				<b><a href="https://www.cell.com/device/home" target="_blank">Device</a></b> 100517
+				<a href="https://www.cell.com/action/showPdf?pii=S2666-9986%2824%2900417-4"> <small>[Paper]</small></a>
+				<a href="https://news.mit.edu/2024/implantable-sensor-could-reverse-opioid-overdoses-0814" target="_blank"> <small>[Press]</small></a>
+				</div>
+			</div>
+		<hr>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/firefly.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, Jack Chen, 
+				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
+				<br>
+				<b><font color="black">Ingestible Light-Reflectance Sensing Capsule for Automated Ischemia Detection</font></b><br>
+				<i>Under Review at Science Robotics</i>
+				</div>
+			</div>
+		<hr>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/splash.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<a href="https://alex-alexiev.github.io/"><b>Alexander Alexiev</b></a>, Jack Chen, 
+				<a href="https://meche.mit.edu/people/faculty/cgt20@mit.edu" target="_blank">Giovanni Traverso</a>
+				<br>
+				<b><font color="black">Electrically-Triggered Microactuator Powered by Aluminum-Nickel Nanofilm</font></b><br>
+				<i>U.S. Provisional Patent</i>
+				</div>
+			</div>
+		<hr>
+		
+		
+
+	</div>
+
+	<br>
+	<br>
+	
+	<!-- Projects -->
+	<div class="container">
+		<h3 id="Projects" style="padding-top: 80px; margin-top: -80px;">
+			Projects
+			
+		</h3>
+
+		<div id="pubs"></div>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/rope.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Real-time Non-Rigid Body Tracking and Manipulation</font></b><br>
+				A novel approach to tracking and manipulating deformable objects, like ropes. Rather than Gaussian splatting, a computationally expensive method, I use point clouds, which are extremely fast and enable real-time state estimation of non-rigid bodies. I apply the non-rigid point set registration technique to keep the object's points consistent across all frames. I successfully trained a graph neural network to model the rope’s dynamics. 
+				</div>
+			</div>
+		<hr>
+		
+		
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/tamp.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Task and Motion Planning with Object Relevance</font></b><br>
+				A novel machine learning architecture, encoding visual data with a convolutional neural network and scene graph information with a graph neural network. This system predicts object relevance scores to help direct the search process in task and motion planners (specifically a PDDLStream variant).
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/tft.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Enhancing Time Series Prediction Through Short-Term Covariate Forecasting</font></b><br>
+				A framework that is able to first forecast covariates into the near future and then use those predictions along with past known covariates to estimate the current target variable. 
+				</div>
+			</div>
+		<hr>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/jet.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Electrically-Triggered Jetting of mRNA Vaccine Into Internal Tissue</font></b><br>
+			 Designed and created a novel ingestible robot capable of delivering mRNA vaccines directly into the stomach tissue, thus alleviating the need for an injection. 
+				</div>
+			</div>
+		<hr>
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/heater.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Ultra-Low Power Microheater</font></b><br>
+				Developed a novel ultra low power method to ignite a reactive metallic nanofilm on demand using a custom micro-heater array.
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/bistable.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Mesoscale Single-Cut Bistable Mechanism</font></b><br>
+				Created the first mesoscale (1-500 um) bistable mechanism that can be cut in a single laser cutting operation out of Nickle chromium alloy. Can be used in a variety of applications, such as drug delivery, micro-robotics, and MEMS.
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/robosoccer.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">RoboSoccer</font></b><br>
+				Designed a multi-agent control algorithm using decision trees for a team of 4 humanoid robots playing soccer for the RoboCup 2022 in Thailand.
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/utfr.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">University of Toronto Formula Racing Team</font></b><br>
+				Created the wiring harness for the car and designed a cell-level fusing system for a custom 600V Li-ion battery pack made with 18650 cells.
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/ball.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Ball Balancing Robot</font></b><br>
+				Created a robot that balances on a ball by using the digital signal processor on the IMU for fast closed loop control with a dynamics model and a custom stepper motor controll library.
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/yoda.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Actuating Plotter</font></b><br>
+				Built and programmed a plotter for under $15 capable of taking any PNG image and converting it to a series of line segments that can be drawn by two stepper motors.
+				</div>
+			</div>
+		<hr>
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/7558.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">FIRST Robotics Competition Mentor</font></b><br>
+				I started my high school's FRC team in grade 11. I've since continued as a mentor teaching modern robotics methods and tools to high school students for the FIRST Robotics Competition. Currently using Nvidia Isaac Sim with ROS2 to develop and test a highly optimized C++ library using multiple cameras and AprilTag targets for fast and precise localization with an extended kalman filter and factor graphs.
+				</div>
+			</div>
+		<hr>
+
+
+
+		<hr>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/projects/drones.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Drones</font></b><br>
+				In the 8th grade I designed, 3D printed, and programmed on an Arduino multiple drones with custom gimbals and GPS navigation. Fly FPV drones recreationally. 
+				</div>
+			</div>
+		<hr>
+
+		
+		
+	
+	</div>
+	
+	<br>
+	<br> 
+
+	<!-- Experience -->
+	<div class="container">
+		<h3 id="Experience" style="padding-top: 80px; margin-top: -80px;">
+			Experience
+		</h3>
+
+		<div id="exp"></div>
+			<hr>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-12">
+							<h4><font color="black">Robot Vision and Learning Lab @ University of Toronto</font></h4><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10">
+							<ul>
+								<li>
+									Currently working on novel methods for robots to manipulate ropes in 3D. 
+								</li>
+								<li>
+									Created a computer vision pipeline to incorporate learning into task and motion planning (TAMP) problems by learning representations for 3D scenes with a series of CNNs and GNNs using perception data and automatically generated scene graphs from object poses.
+								</li>
+								<li>
+									Used Slurm and Docker to parallelize multiple data collection instances from a DRAKE simulation of a Franka Panda environment and multiple model training sessions in Tensorflow to gather training statistics and compare different models efficiently.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+						<img class="img-fluid img-rounded" src="files/images/rbl-logo.png">
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-12">
+							<h4><font color="black">Lab for Translational Engineering @ Massachusetts Institute of Technology and BWH</font></h4><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10">
+							<ul>
+								<li>
+									Led the development of a pill sized ingestible robot to autonomously deliver mRNA vaccines inside the stomach through a non-invasive manner. (Manuscript under preperation) 
+								</li>
+								<li>
+									Created an ingestible robot to create a map of the small intestine in 10 wavelengths to non-invasively and autonomously detect internal bleeding and bruising. (Manuscript under preparation) 
+								</li>
+								<li>
+									Developed a low power algorithm in C++ to fuse sensor data on an implant and detect opioid overdoses. 
+									An Implantable System for Opioid Safety, Device 100517
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+						<img class="img-fluid img-rounded" src="files/images/l4te-logo-teal-large.webp">
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-12">
+							<h4><font color="black">Machine Learning Team @ Electronic Arts</font></h4><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10">
+							<ul>
+								<li>
+									Created a tool for the Frostbite game engine in C++ to gather 3D bounding boxes for key animation objects and stream the data to a remote server for machine learning models.
+								</li>
+								<li>
+									Optimized the FIFA game testing process by designing an Autoencoder CNN with Tensorflow to detect visual animation glitches and therefore allowing human game testers to focus on more complex feedback.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="col d-flex align-items-center justify-content-center">
+						<img class="img-fluid img-rounded" src="files/images/ea-logo.png">
+				</div>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+
+	<br><br>
+
+
+	
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

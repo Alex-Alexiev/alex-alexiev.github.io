@@ -1,0 +1,53 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.62in,top=0.52in,bottom=0.55in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage{fontspec}
+
+% Liberation Sans is the installed, metric-compatible substitute for Arial.
+\setsansfont{Liberation Sans}[Scale=0.96]
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{cvblue}{HTML}{075B9F}
+\definecolor{cvgray}{HTML}{666666}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{cvgray}Alexander Alexiev -- Page \thepage\ of 2}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1.2pt,topsep=2pt,parsep=0pt,partopsep=0pt,after=\vspace{3pt}}
+
+\titleformat{\section}
+  {\large\bfseries\color{cvblue}}
+  {}{0pt}{}
+  [\vspace{0.08em}\color{cvblue}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\newcommand{\cvrow}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X@{\hspace{1em}}r@{}}#1 & #2\end{tabularx}%
+}
+\newcommand{\entry}[4]{%
+  \Needspace{5\baselineskip}%
+  \cvrow{\textbf{#1}, #2}{#3}\\[-1pt]
+  \cvrow{}{\small #4}\vspace{-2pt}
+}
+\newcommand{\pub}[4]{%
+  \cvrow{\textbf{#1}}{\small #2}\\[-1pt]
+  #3\\[-1pt]
+  {\small #4}\par\vspace{5pt}
+}
+\newcommand{\myname}{\textbf{\textit{Alexander Alexiev}}}
+
+\begin{document}
+\input{page-1.tex}
+\newpage
+\input{page-2.tex}
+\end{document}
